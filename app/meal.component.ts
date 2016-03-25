@@ -1,9 +1,13 @@
-export class Meal {
-  public healthy: boolean = false;
-  constructor(public foodItem: string, public details: string, public calories: number) {}
-  checkHealthy() {
-    if (this.calories < 300) {
-      this.healthy = true;
-    }
-  }
+import { Component } from 'angular2/core';
+import { Meal } from './meal.model';
+
+@Component({
+  selector: 'meal-display',
+  inputs: ['meal'],
+  template: `
+  <h3>{{ meal.foodItem }}</h3>
+  `
+})
+export class MealComponent {
+  public meal: Meal;
 }
