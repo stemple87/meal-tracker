@@ -14,7 +14,6 @@ import { EditMealDetailsComponent } from './edit-meal-details.component';
       (click)="mealClicked(currentMeal)"
       [class.selected]="currentMeal === selectedMeal"
       [meal]="currentMeal">
-      <p>{{selectedMeal}}</p>
     </meal-display>
     <edit-meal-details *ngIf="selectedMeal" [meal]="selectedMeal">
     </edit-meal-details>
