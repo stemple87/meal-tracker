@@ -20,10 +20,10 @@ export class AppComponent {
   public meals: Meal[];
   constructor(){
     this.meals = [
-      new Meal("Cheeseburger", "yep", "400"),
-      new Meal("French Fries", "delicious", "300"),
-      new Meal("Ice Cream", "hell yeah", "400"),
-      new Meal("Sandwitch", "all ham", "300")
+      new Meal("Cheeseburger", "yep", 400),
+      new Meal("French Fries", "delicious", 300),
+      new Meal("Ice Cream", "hell yeah", 400),
+      new Meal("Sandwitch", "all ham", 300)
     ];
   }
   mealWasSelected(clickedMeal: Meal): void {
