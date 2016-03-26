@@ -12,7 +12,6 @@ import { Meal } from './meal.model';
       <h3>Edit Food Item: </h3>
       <input [(ngModel)]="meal.foodItem" class="col-sm-8 input-lg"/>
       <br>
-      <br>
       <h3>Edit Details: </h3>
       <input [(ngModel)]="meal.details" class="col-sm-8 input-lg"/>
       <br>

@@ -21,9 +21,9 @@ export class AppComponent {
   constructor(){
     this.meals = [
       new Meal("Cheeseburger", "yep", 400),
-      new Meal("French Fries", "delicious", 300),
-      new Meal("Ice Cream", "hell yeah", 400),
-      new Meal("Sandwitch", "all ham", 300)
+      new Meal("Salad", "caesar", 175),
+      new Meal("Ice Cream", "Two scoops", 400),
+      new Meal("Sandwitch", "pb&j", 200)
     ];
   }
   mealWasSelected(clickedMeal: Meal): void {
